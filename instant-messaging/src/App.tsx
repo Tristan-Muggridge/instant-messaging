@@ -2,6 +2,7 @@ import { useState } from 'react'
 import users from './data/users'
 
 import './App.css'
+import UserCard from './components/UserCard/UserCard';
 
 function App() {
   
@@ -13,9 +14,7 @@ function App() {
 		<div className="App">
 			
 			<div className="userPane">
-				<div className="user-card">
-					
-				</div>
+				<UserCard />
 			</div>
 			<div className="messagePane">
 

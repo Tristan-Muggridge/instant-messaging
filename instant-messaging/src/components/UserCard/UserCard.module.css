@@ -1,0 +1,37 @@
+.userCard {
+    height: 5rem;
+    width: 10rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatarFrame, .avatarFrameBottom {
+    height: 2rem;
+    width: 6rem;
+
+    position: absolute;
+    left: 1.5rem;
+    bottom: 0;
+
+    transform: skew(40deg, 0deg);
+}
+.avatarFrame {
+    border: white 0.25rem solid;
+    background-color: lightcoral;
+}
+
+.avatarFrameBottom {
+    border-bottom: white 0.25rem solid;
+    z-index: 50;
+}
+
+.userAvatar {
+    height: auto;
+    width: 4rem;
+    
+    position: absolute;
+    bottom: 0;
+    left: 4rem;
+    
+    z-index: 20;
+}
