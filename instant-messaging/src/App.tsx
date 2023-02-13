@@ -14,7 +14,7 @@ function App() {
 		<div className="App">
 			
 			<div className="userPane">
-				<UserCard />
+				<UserCard user={users[0]}/>
 			</div>
 			<div className="messagePane">
 
