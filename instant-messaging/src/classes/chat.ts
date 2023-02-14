@@ -6,6 +6,8 @@ export interface IChat {
 	id: number;
     users: IUser[];
 	messages: IMessage[];
+
+    addMessage(message: IMessage):void;
 }
 
 class Chat implements IChat {
@@ -20,6 +22,8 @@ class Chat implements IChat {
         this.users = users;
         this.messages = messages || [];
     }
+
+    addMessage = (message: IMessage) => {this.messages.push(message)};
 }
 
 export default Chat;

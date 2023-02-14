@@ -1,4 +1,4 @@
-import { IChat } from "./chat"
+import Chat, { IChat } from "./chat"
 
 export interface IUser {
     id: number
@@ -26,6 +26,11 @@ class User implements IUser {
     }
 
     addFriends = (friends: IUser[]) => this.friends = [...this.friends, ...friends];
+    startChat = (user: IUser) => {
+        const chat = new Chat([this, user]);
+        this.chats.push(chat);
+        user.chats.push(chat);
+    }
 }
 
 export default User;

@@ -1,0 +1,31 @@
+.container {
+    max-width: 1024px;
+    padding: 0 5rem;
+}
+
+.received, .sent {
+    max-width: 30rem;
+    width: fit-content;
+    border: 0.25rem white solid;
+    padding: 0.125rem 2.5rem;
+}
+
+.received {
+    transform: skew(-40deg, 0deg);
+    background-color: black;
+}
+
+.sent {
+    transform: skew(40deg, 0deg);
+    background-color: white;
+    color: black;
+    border-color: black;
+    margin-left: auto;
+}
+
+.received * {
+    transform: skew(40deg, 0deg);
+}
+.sent * {
+    transform: skew(-40deg, 0deg);
+}

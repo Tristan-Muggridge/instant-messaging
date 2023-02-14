@@ -3,6 +3,7 @@ import users from './data/users'
 
 import './App.css'
 import UserCard from './components/UserCard/UserCard';
+import Message from './components/Message/Message';
 
 function App() {
   
@@ -12,12 +13,13 @@ function App() {
 
 	return (
 		<div className="App">
-			
-			<div className="userPane">
+			<div className="userPane" style={{width: "33%"}}>
+				<h3 style={{marginLeft: 0, textAlign:'left'}}> Friends </h3>
 				<UserCard user={users[0]}/>
 			</div>
-			<div className="messagePane">
-
+			<div style={{marginLeft: "15rem"}}>
+				<Message message={users[0].chats[0].messages[0]}/>
+				<Message message={users[3].chats[0].messages[1]}/>
 			</div>
 		</div>
 	)
